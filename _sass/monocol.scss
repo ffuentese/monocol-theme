@@ -1,0 +1,123 @@
+/*
+# Este archivo es liberado bajo las mismas condiciones de la licencia MIT.
+# v. 0.01 monocol hoja de estilo 26-11-2020
+# Francisco Fuentes (fuentes_f en encompasserve.org / correo en ffuent.es) 
+
+*/
+
+h1 {
+	font-family:  monospace;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 26.4px;
+	text-decoration: underline
+}
+
+h2 {
+	font-family:   monospace;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+}
+
+h3 {
+	font-family: monospace;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 15.4px;
+}
+
+.site-title {
+	font-family:  monospace;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 26.4px;
+	text-decoration: none;
+}
+
+a:link, a:visited, a:active {
+    color:#000;
+    font-weight:normal;
+}
+
+a:hover {
+    background-color:#000; 
+    color:#fff; 
+    text-decoration:none;
+}
+
+p, li {
+	font-family:  monospace;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+blockquote {
+	font-family: monospace;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+pre {
+	font-family: monospace;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
+}
+
+code {
+	font-family: monospace;
+	font-size: 12px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 600;
+	line-height: 18.5714px;
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.center-image {
+    margin: 0 auto;
+    display: block;
+}
+
+.img-container {
+	text-align: center;
+}
+
+ul.menu li{
+	display:inline;
+}	
+
+article {
+	  padding: 30px 0px;
+    }
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  main {
+	  word-wrap: break-word; 
+	  width: 600px;
+	  margin: 0 auto;
+    }
+}

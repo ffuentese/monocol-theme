@@ -1,0 +1,62 @@
+---
+layout: default
+pagination: 
+  enabled: true
+  per_page: 5
+  sort_field: 'date'
+  sort_reverse: true
+---
+
+<div class="home">
+
+
+  {{ content }}
+
+
+  {% if site.pagination.enabled %}
+    {% assign posts = paginator.posts %}
+  {% else %}
+    {% assign posts = site.posts %}
+  {% endif %}
+
+
+  {%- if posts.size > 0 -%}
+    {%- if page.list_title -%}
+      <h2 class="post-list-heading">{{ page.list_title }}</h2>
+    {%- endif -%}
+    <ul class="post-list">
+      {%- assign date_format = site.minima.date_format | default: "%Y/%m/%d" -%}
+      {%- for post in posts -%}
+      <li>
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    {% if paginator.total_pages > 1 %}
+		<ul>
+		  {% if paginator.previous_page %}
+		  <li>
+			<a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Previous</a>
+		  </li>
+		  {% endif %}
+		  {% if paginator.next_page %}
+		  <li>
+			<a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next</a>
+		  </li>
+		  {% endif %}
+		</ul>
+	{% endif %}
+
+
+  {%- endif -%}
+
+</div>
