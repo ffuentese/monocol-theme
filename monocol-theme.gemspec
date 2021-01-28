@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "monocol-theme"
-  spec.version       = "0.1.1"
+  spec.version       = "0.1.2"
   spec.authors       = ["Francisco Fuentes"]
   spec.email         = ["correo@ffuent.es"]
 

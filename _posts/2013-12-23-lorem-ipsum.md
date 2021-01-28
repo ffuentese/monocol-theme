@@ -6,6 +6,7 @@ categories: [lorem]
 tags: lorem ipsum dolor nosense
 ---
 
+![Cat]({{site.baseurl}}/pexels-krysten-merriman-20787.jpg){: .center-image title="Photo by Krysten Merriman from Pexels centered with .center-image"}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices semper magna sit amet molestie. Donec porta efficitur nisl nec fringilla. Morbi sollicitudin eros vitae nisl pharetra, ut viverra mauris feugiat. Proin pellentesque velit vitae libero pellentesque ultrices. Duis convallis, mi ut placerat vestibulum, libero quam varius lectus, non condimentum leo nisi a leo. Morbi pellentesque commodo risus, non gravida mi imperdiet finibus. Donec sagittis augue vel dolor efficitur, nec ornare lectus mollis.
 

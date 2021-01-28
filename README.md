@@ -28,10 +28,13 @@ Or install it yourself as:
 ## Usage
 
 Once you have installed it edit your _config.yml and _data/navigation.yml for the top menu. Categories need to be filled in the category folder.
+Remember that pictures can be centered with the class .center-image so you don't have to figure it out yourself.
 
 ## Screenshot
 
 ![screenshot](screenshot.png)
+
+![Another screenshot of a page](screenshot2.png)
 
 ## Contributing
 
