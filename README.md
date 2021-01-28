@@ -1,10 +1,6 @@
 # monocol-theme
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
-
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
+A minimalist theme for Jekyll based purely in monospaced fonts. It includes syntax highlighting, automatic tag pages and the new jekyll pagination plugin.
 
 
 ## Installation
@@ -31,7 +27,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+Once you have installed it edit your _config.yml and _data/navigation.yml for the top menu. Categories need to be filled in the category folder.
+
+## Screenshot
+
+![screenshot](screenshot.png)
 
 ## Contributing
 

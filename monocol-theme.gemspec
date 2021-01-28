@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Francisco Fuentes"]
   spec.email         = ["git@ffuent.es"]
 
-  spec.summary       = "El tema de Texto-Plano.xyz"
+  spec.summary       = "El tema de Texto-Plano.xyz. A very minimal theme."
   spec.homepage      = "https://texto-plano.xyz"
   spec.license       = "MIT"
 
@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-feed", "~> 0.9"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.1"
   spec.add_runtime_dependency "rouge", "~> 3.26"
-  spec.add_runtime_dependency "jekyll-paginate-v2"
+  spec.add_runtime_dependency "jekyll-paginate-v2", "~> 3.0"
 
-  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "bundler" 
 end
