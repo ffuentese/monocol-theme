@@ -3,7 +3,7 @@ theme: monocol-theme
 author: ffuentes
 license: CC-BY             
 highlighter: rouge
-baseurl: "/monocol-theme"
+baseurl: "https://ffuentese.github.io/monocol-theme"
 include: [_posts]
 pagination:
   
