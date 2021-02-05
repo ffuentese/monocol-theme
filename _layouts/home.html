@@ -30,7 +30,7 @@ pagination:
       <li>
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
+          <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
             {{ post.title | escape }}
           </a>
         </h3>
@@ -45,12 +45,12 @@ pagination:
 		<ul>
 		  {% if paginator.previous_page %}
 		  <li>
-			<a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Previous</a>
+			<a href="{{ site.baseurl }}{{ paginator.previous_page_path | prepend: site.baseurl }}">Previous</a>
 		  </li>
 		  {% endif %}
 		  {% if paginator.next_page %}
 		  <li>
-			<a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next</a>
+			<a href="{{ site.baseurl }}{{ paginator.next_page_path | prepend: site.baseurl }}">Next</a>
 		  </li>
 		  {% endif %}
 		</ul>
