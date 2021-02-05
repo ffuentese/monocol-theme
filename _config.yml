@@ -5,3 +5,4 @@ license: CC-BY
 highlighter: rouge
 include: [_posts]
 paginate: 5
+baseurl: /monocol-theme
