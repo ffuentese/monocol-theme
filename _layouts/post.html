@@ -7,20 +7,20 @@ layout: default
 <p><span class="time">{{ page.date | date:"%d/%m/%Y"	 }}</span></p>
 {% if page.categories %}
   <span class="categories">
-    <p>&raquo; {% for category in page.categories %}<a href="/category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}</p>
+    <p>&raquo; {% for category in page.categories %}<a href="{{ site.baseurl }}/category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}</p>
   </span>
 {% endif %}
 
 {{ content }}
 
 <p><span class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %m %Y" }}</time> &middot; {% for tag in page.tags %}
-    <a href="/tag/{{tag}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span></p>
+    <a href="{{ site.baseurl }}/tag/{{tag}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span></p>
 
 <div class="PageNavigation">
   {% if page.previous.url %}
-    <p><a class="prev" href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a></p>
+    <p><a class="prev" href="{{ site.baseurl }}{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a></p>
   {% endif %}
   {% if page.next.url %}
-    <p><a class="next" href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a></p>
+    <p><a class="next" href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }} &raquo;</a></p>
   {% endif %}
 </div>
